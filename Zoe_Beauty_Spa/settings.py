@@ -81,18 +81,7 @@ DATABASES = {
     }
 }
 
-"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'SPADB',
-        'USER': 'postgres',
-        'PASSWORD':'Maribelteamo2426@',
-        'HOST':'127.0.0.1',
-        'DATABASE_PORT':'5432',
-        #'GestionSPA',
-    }
-}"""
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -138,11 +127,3 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-
-#para enviar email a correos.
-EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST="smtp.gmail.com"
-EMAIL_USE_TLS=True
-EMAIL_PORT=587
-EMAIL_HOST_USER="arisladen@gmail.com"
-EMAIL_HOST_PASSWORD="Vianchiteamo2426"
