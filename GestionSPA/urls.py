@@ -1,6 +1,6 @@
 from django.urls import path
 from GestionSPA import views
-from Zoe_Beauty_Spa.GestionSPA import views 
+
 
 
 
