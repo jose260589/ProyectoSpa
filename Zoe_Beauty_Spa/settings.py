@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'GestionSPA',
-    'GestionServiciosSPA',
+    'GestionServiciosSPA'
     
 ]
 
@@ -76,13 +76,13 @@ WSGI_APPLICATION = 'Zoe_Beauty_Spa.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
+"""
 
 
 # Password validation
@@ -129,3 +129,13 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #datos db
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'SPADB',
+        'USER': 'jose',
+        'PASSWORD':'Maribelteamo2426@',
+        'HOST':'127.0.0.1',
+        'DATABASE_PORT':'5432',
+    }
+}
