@@ -129,13 +129,3 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #datos db
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'SPADB',
-        'USER': 'jose',
-        'PASSWORD':'Maribelteamo2426@',
-        'HOST':'127.0.0.1',
-        'DATABASE_PORT':'5432',
-    }
-}
