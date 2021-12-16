@@ -7,7 +7,7 @@ from django.db.models.fields.related import create_many_to_many_intermediary_mod
 class Servicio(m.Model):
     titulo=m.CharField(max_length=50)
     contenido=m.CharField(max_length=100)
-    imagen=m.ImageField()
+    imagen=m.ImageField(upload_to='servicios') #con este metodo se puede cargar las fotos a la carpeta en media
     costo=m.IntegerField()
     created=m.DateTimeField(auto_now_add=True)
     updated=m.DateTimeField(auto_now_add=True)
