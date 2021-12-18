@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<!--Contenido de pagina-->
+    {% for servicio in servicios %}
+        <div><p>
+            <h2 style="color: white;">{{servicio.titulo}}</h2>
+            <p style="color: white;">{{servicio.contenido}}</p>
+
+            <p><img src="{{servicio.imagen.url}}" width="300" height="250"></p>
+            <!--servicio.imagen.url, agregando url, se logra cargar imagen, esto es como grabar o llamar desde la carpeta en la
+            que esta la imagen gardada-->
+
+            <p style="color: white;">${{servicio.costo}}</p>
+        </p></div>
+    {% endfor %}
+
+{% endblock %}

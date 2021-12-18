@@ -18,11 +18,3 @@ def contacto(request):
 
     return render(request, "contacto.html")
 
-from GestionServiciosSPA.models import Servicio 
-# Create your views here.
-
-
-
-def servicios(request):
-    servicios=Servicio.objects.all()
-    return render(request, "servicios.html", {"servicios": servicios})
