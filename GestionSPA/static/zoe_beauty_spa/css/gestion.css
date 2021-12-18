@@ -130,6 +130,10 @@ p {
     width: 75%;
     float: left;
   }
+  .intro .intro-img-1 {
+    width: 50%;
+    float: left;
+  }
   .intro .intro-text {
     left: 600;
     width: 60%;
@@ -145,6 +149,7 @@ p {
     bottom: -2rem;
   }
 }
+
 
 @media (min-width: 1200px) {
   .intro .intro-text {
