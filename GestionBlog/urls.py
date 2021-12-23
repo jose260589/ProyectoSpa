@@ -9,7 +9,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
 
-   # path('servicios/', views.servicios, name="Servicios"),
+   path('blog/', views.blog, name="Blog"), #quitar blog/ si da error
 
 ]
 
