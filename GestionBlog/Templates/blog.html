@@ -5,6 +5,34 @@
 {% block content %}
 
 <!--Contenido de pagina-->
+{% for post in posts %}
 
+<div><p>
+    <h2 style="color: white;">{{post.titulo}}</h2>
+    <p style="color: white;">{{post.contenido}}</p>
+
+    <p><img src="{{post.imagen.url}}" width="300" height="250"></p>
+ 
+
+   
+</p></div>
+
+    <!-- Heading -->
+<section class="page-section clearfix">
+<div class="container">
+<div class="intro">
+ <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{post.imagen.url}}" alt="" style="width: 50%;">
+ <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+   <h2 class="section-heading mb-4">
+     <span class="section-heading-lower">{{post.titulo}}</span>
+     <span class="section-heading-upper">{{post.contenido}}</span>
+     
+   </h2>
+  
+ </div>
+</div>
+</div>
+</section>
+{% endfor %}
 
 {% endblock %}
