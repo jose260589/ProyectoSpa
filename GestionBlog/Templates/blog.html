@@ -7,16 +7,6 @@
 <!--Contenido de pagina-->
 {% for post in posts %}
 
-<div><p>
-    <h2 style="color: white;">{{post.titulo}}</h2>
-    <p style="color: white;">{{post.contenido}}</p>
-
-    <p><img src="{{post.imagen.url}}" width="300" height="250"></p>
- 
-
-   
-</p></div>
-
     <!-- Heading -->
 <section class="page-section clearfix">
 <div class="container">
@@ -25,14 +15,26 @@
  <div class="intro-text left-0 text-center bg-faded p-5 rounded">
    <h2 class="section-heading mb-4">
      <span class="section-heading-lower">{{post.titulo}}</span>
-     <span class="section-heading-upper">{{post.contenido}}</span>
-     
+     <span class="section-heading-upper">{{post.contenido}}</span> 
    </h2>
-  
+  <div style="text-align: left; font-size: 0.8em;">
+     Autor: {{post.autor}}
+  </div>
  </div>
 </div>
 </div>
 </section>
 {% endfor %}
+
+<section>
+  <div style="width: 80%; margin: auto; text-align: center; color: white;">
+      categorias: 
+      {% for post in posts %}
+        {% for categoria in post.categorias.all %}
+          {{categoria.nombre}} &nbsp; &nbsp;
+        {% endfor %}
+      {% endfor %}
+  </div>
+</section>
 
 {% endblock %}
