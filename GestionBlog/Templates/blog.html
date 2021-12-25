@@ -31,7 +31,8 @@
       categorias: 
       {% for post in posts %}
         {% for categoria in post.categorias.all %}
-          {{categoria.nombre}} &nbsp; &nbsp;
+          <a href="{% url 'Categoria' categoria.id %}">{{categoria.nombre}}</a>&nbsp; &nbsp;
+          <!--Tener en cuenta el nombre de las categorias, si son erroneos, django no lo encuentra-->
         {% endfor %}
       {% endfor %}
   </div>
