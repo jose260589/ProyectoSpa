@@ -262,7 +262,7 @@ p {
 }
 
 a.link{
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.596);
 }
 
 a.link:hover{
@@ -281,4 +281,16 @@ ul.errorlist{
   padding-top: .75rem;
   font-style: italic;
   color: red;
+}
+
+.linksCategorias{
+
+  color: white !important;
+
+  text-decoration: underline;
+}
+
+.linksCategorias:hover{
+
+  text-decoration: none;
 }
