@@ -25,5 +25,6 @@ urlpatterns = [
     path('', include('GestionSPA.urls')),
     path('', include('GestionServiciosSPA.urls')),
     path('', include('GestionBlog.urls')),
+    path('', include('GestionContacto.urls')),
 ]
 

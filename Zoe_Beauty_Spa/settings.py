@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'GestionSPA',
     'GestionServiciosSPA',
     'GestionBlog',
+    'GestionContacto',
     
 ]
 
