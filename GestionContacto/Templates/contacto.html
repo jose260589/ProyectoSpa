@@ -4,12 +4,16 @@
 
 {% block content %}
 
-<div >
-  <table style="color: cornsilk;">
+<div class="contenedorFormulario" >
+  <form action="" method="post" style="text-align: center;">
+    {% csrf_token %} <!--Se usa como codigo de seguridad, para evitar enviar
+    informacion desde otras paginas, o algun tipo de fraude, todos los formularios
+  deben llevarlo-->
+  <table style="color: cornsilk; margin: 20px auto;">
     {{ miFormulario.as_table }}
   </table>
-    
-  
+  <input type="submit" value="Enviar" style="width: 150px;">
+  </form>
 </div>
 
 <!--Contenido de pagina-->
